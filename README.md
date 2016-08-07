@@ -36,12 +36,15 @@ host# sudo gparted
 
 ### 2) Note the partition
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/1.png)
 
 ### 3) Untar the image 
 
 ```
 host# gunzip -c ubuntu-12.04-preinstalled-server-armhf+omap4.img.gz
 ```
+
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/2.png)
 
 #### Possible Errors:
   - If you try to untar the downloaded file, you may get .raw file. Don't use GUI for this.
@@ -52,12 +55,13 @@ host# gunzip -c ubuntu-12.04-preinstalled-server-armhf+omap4.img.gz
 host# sudo dd bs=4M if=ubuntu-12.04-preinstalled-server-armhf+omap4.img of=/dev/sdd
 ```
 
-#### Possible Error:
+#### Possible Errors:
    - Do not increase bs size. It is a command which indicates how many bytes will be written at once.
    - Do not forget to change "of=/dev/sdd" section. It must be the one which you have noted at step 2.
 
 You must see something like this at the end:
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/3.png)
 
 ### 5) Synchronize the card.
 
@@ -78,39 +82,44 @@ host# sudo sync
 
 ### 9) When System Configuration is prompted at PuTTy, select the language you desire.
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/4.png)
 
 ### 10) Select the area as "United States" as you may not find your location.
 
 ### 11) Select your time zone
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/5.png)
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/6.png)
 
-
-
-
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/7.png)
 
 ### 12) Enter your linux username and password.
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/8.png)
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/9.png)
 
-
-
-
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/10.png)
 
 ### 13) Select your interface to connect internet. If you aim to use wireless network, be sure that the network is encrypted with WEP password type or there is no password. WPA and WPA2 encryption cannot be resolved by default.
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/11.png)
 
 ### 14) Wait for board to get network configuration by using DHCP server.
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/12.png)
 
 #### Possible Errors:
    - If you are not using a DHCP server, you may need to configure the ethernet ip/mask/gateway/dns
 
 ### 15) Choose a hostname for board to make it recognizable at network
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/13.png)
 
 ### 16) Choose your server type. Basic Ubuntu Server is raw OS installation. You may install the other servers explicitly after.
 
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/14.png)
 
 ### 17) Wait for installation to be finished & login.
 
@@ -246,8 +255,5 @@ panda# ./Sample-NiSimpleRead
 
 You will see something like this:
 
-
-
-
-
+![alt tag](https://github.com/dBeker/Kinect-PandaBoard-Installation/blob/master/Images/15.png)
 
